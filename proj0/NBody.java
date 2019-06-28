@@ -1,6 +1,5 @@
 public class NBody {
-
-    //public static String background = "images/starfield.jpg";
+    
 
     /** return a double corresponding to the radius
      * of the universe in that file*/

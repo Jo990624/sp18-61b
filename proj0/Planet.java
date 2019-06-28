@@ -6,7 +6,7 @@ public class Planet {
     public double mass;
     public String imgFileName;
 
-    public double G = 6.67e-11;
+    private double G = 6.67e-11;
 
     public static String background = "images/starfield.jpg";
 
