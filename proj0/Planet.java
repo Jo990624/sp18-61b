@@ -8,7 +8,7 @@ public class Planet {
 
     private double G = 6.67e-11;
 
-    public static String background = "images/starfield.jpg";
+    private static String background = "images/starfield.jpg";
 
     public Planet(double xP, double yP, double xV, double yV, double m, String img){
         this.xxPos = xP;
@@ -101,7 +101,7 @@ public class Planet {
 
         int len = ps.length;
         double f = 0;
-        for (int i = 0; i < len - 1; i++) {
+        for (int i = 0; i < len ; i++) {
             if (!this.equals(ps[i])) {
                 f += this.calcForceExertedByY(ps[i]);
             }
