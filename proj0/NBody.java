@@ -1,5 +1,5 @@
 public class NBody {
-    
+
 
     /** return a double corresponding to the radius
      * of the universe in that file*/
@@ -58,9 +58,9 @@ public class NBody {
 
         double t = 0;
 
-        while(t<T){
+        while(t<=T){
             double[] xForce = new double[ps.length];
-            double [] yForce = new double[ps.length];
+            double[] yForce = new double[ps.length];
 
             for (int i = 0; i<ps.length; i++){
                 xForce[i] = ps[i].calcNetForceExertedByX(ps);
@@ -78,13 +78,14 @@ public class NBody {
 
             t += dt;
 
-            StdOut.printf("%d\n", ps.length);
-            StdOut.printf("%.2e\n", R);
-            for (int i = 0; i < ps.length; i++) {
-                StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
-                        ps[i].xxPos, ps[i].yyPos, ps[i].xxVel,
-                        ps[i].yyVel, ps[i].mass, ps[i].imgFileName);
+
             }
+        StdOut.printf("%d\n", ps.length);
+        StdOut.printf("%.2e\n", R);
+        for (int i = 0; i < ps.length; i++) {
+            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+                    ps[i].xxPos, ps[i].yyPos, ps[i].xxVel,
+                    ps[i].yyVel, ps[i].mass, ps[i].imgFileName);
 
 
 
